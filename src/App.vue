@@ -1,5 +1,10 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png" />
+  <div
+    class="box"
+    v-draggable
+    v-scale
+  ></div>
 </template>
 
 <script lang="ts">
@@ -15,6 +20,10 @@ export default defineComponent({
 </script>
 
 <style>
+* {
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -22,5 +31,10 @@ export default defineComponent({
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
 }
 </style>
